@@ -36,6 +36,7 @@ body{
     font-size: 1.5rem;
     background-color: #ED8074;
     border-color: #00233A;
+    color: #00233A;
     cursor: pointer;
 }
 
@@ -43,6 +44,10 @@ body{
 .background{
     margin-top: 150px;
     text-align: center;
+}
+
+.kozz_logo{
+    height: 43rem;
 }
 
 .button_play{
