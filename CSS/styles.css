@@ -14,15 +14,21 @@ body{
     background-color: #1D7A8C;
     height: 5rem;
 }
+.banner_content{
+    height: 5rem;
+}
 
 .banner_home_img{
     height: 5rem;
     margin-left: 0.3rem;
+    margin-right: 0.3rem;
 }
 
 .banner_login{
     height: 5rem;
-    width: 5rem;
+    width: 10rem;
+    font-size: 1rem;
+    max-width: 100%;
     background-color: #ED8074;
     border-color: #00233A;
     cursor: pointer;
