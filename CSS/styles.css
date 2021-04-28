@@ -8,31 +8,35 @@ body{
     transition-duration: 0.4s;
     border-style: solid;
     display: inline-block;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 /*BANNER*/
 .banner{
     background-color: #1D7A8C;
-    height: 5rem;
+    height: 4.5rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
 }
 .banner_content{
-    height: 5rem;
+    height: 4.5rem;
 }
 
 .banner_home_img{
-    height: 5rem;
+    height: 4.5rem;
     margin-left: 0.3rem;
     margin-right: 0.3rem;
 }
 
+
 .banner_login{
-    height: 5rem;
+    height: 4.5rem;
     width: 10rem;
-    font-size: 1rem;
-    max-width: 100%;
+    float: right;
+    font-size: 1.5rem;
     background-color: #ED8074;
     border-color: #00233A;
     cursor: pointer;
-    
 }
 
 /* ************BACKGROUND******************* */
@@ -50,7 +54,6 @@ body{
     background-color: #ED8074;
     color: #00233A;
     font-size: 2rem;
-    font-family: sans-serif;
     cursor: pointer;
 }
 .button_play:hover {
@@ -68,7 +71,6 @@ body{
     color: #1D7A8C;
     text-decoration-color: #ED8074;
     font-size: 2rem;
-    font-family: sans-serif;
     cursor: pointer;
 }
 
