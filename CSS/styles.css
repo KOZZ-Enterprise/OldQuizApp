@@ -36,8 +36,16 @@ body{
     font-size: 1.5rem;
     background-color: #ED8074;
     border-color: #00233A;
+    
+    border-radius: 4px;
     color: #00233A;
     cursor: pointer;
+}
+
+.banner_login:hover {
+    background-color: #00233A;
+    border-color:#ED8074;
+    color: #ED8074;
 }
 
 /* ************BACKGROUND******************* */
