@@ -4,22 +4,16 @@ body{
 }
 
 .button{
-    text-align: center;
     transition-duration: 0.4s;
     border-style: solid;
-    display: inline-block;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-/*BANNER*/
+/* Banner */
 .banner{
     background-color: #1D7A8C;
     height: 4.5rem;
     width: 100%;
-    position: fixed;
     top: 0;
-}
-.banner_content{
-    height: 4.5rem;
 }
 
 .banner_home_img{
@@ -28,18 +22,19 @@ body{
     margin-right: 0.3rem;
 }
 
-
-.banner_login{
+.banner_login {
     height: 4.5rem;
     width: 10rem;
     float: right;
     font-size: 1.5rem;
     background-color: #ED8074;
     border-color: #00233A;
-    
     border-radius: 4px;
     color: #00233A;
     cursor: pointer;
+}
+.banner_login .account-icon{
+    padding: 0 12% 0 0;
 }
 
 .banner_login:hover {
@@ -48,7 +43,15 @@ body{
     color: #ED8074;
 }
 
-/* ************BACKGROUND******************* */
+/* LogIn Modal */
+.modal-content{
+    background-color: #00233A;
+    color: #ED8074;
+}
+
+
+/* Background */
+
 .background{
     margin-top: 150px;
     text-align: center;
