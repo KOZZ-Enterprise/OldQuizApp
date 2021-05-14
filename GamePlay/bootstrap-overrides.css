@@ -18,6 +18,7 @@ body { font-family: "Open Sans", sans-serif !important;}
 .bg-dark-green{ background-color: #1D7A8C !important;}
 
 
+
 /* Text Colors */
 
 .text-primary{ color: #a49dc2 !important;}
@@ -31,6 +32,8 @@ body { font-family: "Open Sans", sans-serif !important;}
 .text-white{ color: #ffffff !important;}
 .text-blue{color: #1f1347 !important;}
 
+.text-black{color: #05030a !important;}
+
 /* Button Colors */
 
 .btn-primary{ background-color: #a49dc2 !important;}
@@ -43,6 +46,10 @@ body { font-family: "Open Sans", sans-serif !important;}
 .btn-dark{ background-color: #342a40 !important;}
 .btn-white{ background-color: #ffffff !important;}
 .btn-cozy{ background-color: #fc5658!important;} /*Not a Bootstrap selector*/
+.btn-purple{ background-color: #7b089b !important;}
+.btn-grey{ background-color: #ada8ac !important;}
+
+
 
 
 
