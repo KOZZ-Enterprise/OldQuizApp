@@ -5,56 +5,124 @@
     <meta charset="utf-8">
     <title>Kozz QuizApp</title>
     
-    <link rel="stylesheet" href="CSS/styles.css">
-    
+    <!-- favicon -->
     <link rel="icon" href="favicon.ico">
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/styles.css">
+    <!-- Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
   </head>
 
   <body>
 
-
-
-    <div class="banner">
-      <div class="banner banner_content">
-        
-        <a href="https://donollario.github.io/QuizApp/">
-          <img class= "banner_home_img" src="images/logga_owl.png" alt="home_logo">
-        </a>
-        <button class="button banner_login" type="button">
-          <span class="material-icons">
-            account_circle
-          </span> 
-          Log in
-        </button>
+    <!-- Log in Modal -->
+    <div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="logInModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="modal-button btn btn-outline-light" style="border:solid; border-color:#ED8074;">Log In</button>
+            <button type="button" class="modal-button btn btn-outline-light" data-toggle="modal" data-target="#signUpModal">Sign Up</button>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <label for="inputLogInEmailOrUsername">Email or Username</label>
+            <input type="text" id="inputLogInEmailOrUsername" class="form-control" aria-describedby="logInEmailOrUserNameHelpBlock" >
+            
+            <label for="inputLogInPassword">Password</label>
+            <input type="password" id="inputLogInPassword" class="form-control" aria-describedby="logInPasswordHelpBlock">
+            <input type="submit" id="logInSubmit" class="submit-button btn btn-dark btn-block" style="margin-top:4%" value="Log In" disabled="disabled" />
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-light btn-block" style="color:#fff; border-color:dodgerblue; background-color:dodgerblue;">Log in with Facebook</button>
+            <!-- <button type="submit" id="loginSubmit" class=" btn btn-light btn-block" disabled="disabled" >Log In</button> -->
+          </div>
+        </div>
       </div>
     </div>
 
+    <!-- Sign Up Modal -->
+    <div class="modal" id="signUpModal" tabindex="-2" role="dialog" aria-labelledby="signUpModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="modal-button btn btn-outline-light" data-dismiss="modal" data-target="#signUpModal">Log In</button>
+            <button type="button" class="modal-button btn btn-outline-light" style="border:solid; border-color:#ED8074;" >Sign Up</button>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <label for="inputSignUpUsername">Username</label>
+            <input type="text" id="inputSignUpUsername" class="form-control" aria-describedby="signUpUserNameHelpBlock" >
+            <small id="signUpUsernameHelpBlock" class="form-text text-muted">
+              The Username is what will display on the website.
+            </small>
+            <label for="inputSignUpEmail">Email</label>
+            <input type="text" id="inputSignUpEmail" class="form-control" aria-describedby="signUpEmailHelpBlock" >
+            <small id="signUpEmailHelpBlock" class="form-text text-muted">
+              We'll never share your email with anyone else.
+            </small>
+            <label for="inputSignUpPassword">Password</label>
+            <input type="password" id="inputSignUpPassword" class="form-control" aria-describedby="SignUp">
+            <small id="signUpPasswordHelpBlock" class="form-text text-muted">
+              Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+            </small>
+            <label for="inputConfirmPassword">Confirm Password</label>
+            <input type="password" id="inputConfirmPassword" class="form-control" aria-describedby="confirmPasswordHelpBlock">
 
-
-    <div class="background">
-      <img class="kozz_logo" src="images/KozzQuiz_logo.png" alt="KozzQuiz_logo">
-      <br>
-      <button class="button button_play" type="button">
-        Play
-      </button>
-      <br>
-      <button class="button button_highscore">
-        Highscore
-      </button>
+            <input type="submit" id="signUpSubmit" class="submit-button btn btn-dark btn-block" style="margin-top:4%" value="Sign Up" disabled="disabled" />
+          </div>
+            <!-- <button type="submit" id="loginSubmit" class=" btn btn-light btn-block" disabled="disabled" >Log In</button> -->
+          </div>
+        </div>
+      </div>
     </div>
-    
 
+    <!-- Banner -->
+    <section>
+        <div class="banner">
+          <a href="https://donollario.github.io/OldQuizApp/">
+            <img class= "banner_home_img" src="images/KozzQuiz_logo_header.png" alt="home_logo">
+          </a>
+          <!-- Button Trigger Modal -->
+          <button type="button" class="button banner_login align-items-center" data-toggle="modal" data-target="#logInModal"><i class="account-icon fas fa-user-circle fa-2x"></i><span >Log In</span></button>
 
+          
+        </div>
+    </section>
 
-
+    <!-- Background-FrontMenu -->
+    <section>
+      <div class="background">
+        <img class="kozz_logo" src="images/KozzQuiz_logo.png" alt="KozzQuiz_logo">
+        <br>
+        <button class="button button_play" type="button">
+          Play
+        </button>
+        <br>
+        <button class="button button_highscore">
+          Highscore
+        </button>
+      </div>
+    </section>
   </body>
-
-
-
-
-
-
+  <script>
+  $(document).ready(function () {
+    $('#inputLogInEmailOrUsername').on('input change', function () {
+        if ($(this).val() != '') {
+            $('#logInSubmit').prop('disabled', false);
+        }
+        else {
+            $('#logInSubmit').prop('disabled', true);
+        }
+    });
+});</script>
 </html>
