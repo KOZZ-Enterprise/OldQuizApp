@@ -21,41 +21,81 @@
 
   <body>
 
+    <!-- Log in Modal -->
+    <div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="logInModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="modal-button btn btn-outline-light" style="border:solid; border-color:#ED8074;">Log In</button>
+            <button type="button" class="modal-button btn btn-outline-light" data-toggle="modal" data-target="#signUpModal">Sign Up</button>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <label for="inputLogInEmailOrUsername">Email or Username</label>
+            <input type="text" id="inputLogInEmailOrUsername" class="form-control" aria-describedby="logInEmailOrUserNameHelpBlock" >
+            
+            <label for="inputLogInPassword">Password</label>
+            <input type="password" id="inputLogInPassword" class="form-control" aria-describedby="logInPasswordHelpBlock">
+            <input type="submit" id="logInSubmit" class="submit-button btn btn-dark btn-block" style="margin-top:4%" value="Log In" disabled="disabled" />
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-light btn-block" style="color:#fff; border-color:dodgerblue; background-color:dodgerblue;">Log in with Facebook</button>
+            <!-- <button type="submit" id="loginSubmit" class=" btn btn-light btn-block" disabled="disabled" >Log In</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div class="modal" id="signUpModal" tabindex="-2" role="dialog" aria-labelledby="signUpModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="modal-button btn btn-outline-light" data-dismiss="modal" data-target="#signUpModal">Log In</button>
+            <button type="button" class="modal-button btn btn-outline-light" style="border:solid; border-color:#ED8074;" >Sign Up</button>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <label for="inputSignUpUsername">Username</label>
+            <input type="text" id="inputSignUpUsername" class="form-control" aria-describedby="signUpUserNameHelpBlock" >
+            <small id="signUpUsernameHelpBlock" class="form-text text-muted">
+              The Username is what will display on the website.
+            </small>
+            <label for="inputSignUpEmail">Email</label>
+            <input type="text" id="inputSignUpEmail" class="form-control" aria-describedby="signUpEmailHelpBlock" >
+            <small id="signUpEmailHelpBlock" class="form-text text-muted">
+              We'll never share your email with anyone else.
+            </small>
+            <label for="inputSignUpPassword">Password</label>
+            <input type="password" id="inputSignUpPassword" class="form-control" aria-describedby="SignUp">
+            <small id="signUpPasswordHelpBlock" class="form-text text-muted">
+              Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+            </small>
+            <label for="inputConfirmPassword">Confirm Password</label>
+            <input type="password" id="inputConfirmPassword" class="form-control" aria-describedby="confirmPasswordHelpBlock">
+
+            <input type="submit" id="signUpSubmit" class="submit-button btn btn-dark btn-block" style="margin-top:4%" value="Sign Up" disabled="disabled" />
+          </div>
+            <!-- <button type="submit" id="loginSubmit" class=" btn btn-light btn-block" disabled="disabled" >Log In</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Banner -->
     <section>
         <div class="banner">
           <a href="https://donollario.github.io/OldQuizApp/">
             <img class= "banner_home_img" src="images/KozzQuiz_logo_header.png" alt="home_logo">
           </a>
-          <!-- Login Signup Modal -->
           <!-- Button Trigger Modal -->
-          <button type="button" class="button banner_login" data-toggle="modal" data-target="#logInModal"><i class="account-icon fas fa-user-circle fa-2x"></i>Log in</button>
+          <button type="button" class="button banner_login align-items-center" data-toggle="modal" data-target="#logInModal"><i class="account-icon fas fa-user-circle fa-2x"></i><span >Log In</span></button>
 
-          <!-- Modal -->
-          <div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="logInModal" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="logInModalLongTitle">Log In</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                  </div>
-                  <div class="input-group mb-3">
-                    <input type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Login Signup Modal End -->
+          
         </div>
     </section>
 
@@ -74,4 +114,15 @@
       </div>
     </section>
   </body>
+  <script>
+  $(document).ready(function () {
+    $('#inputLogInEmailOrUsername').on('input change', function () {
+        if ($(this).val() != '') {
+            $('#logInSubmit').prop('disabled', false);
+        }
+        else {
+            $('#logInSubmit').prop('disabled', true);
+        }
+    });
+});</script>
 </html>

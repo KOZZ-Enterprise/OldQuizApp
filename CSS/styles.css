@@ -8,12 +8,46 @@ body{
     border-style: solid;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+/* LogIn Modal */
+.modal-content{
+    background-color: #00233A;
+    color: #ED8074;
+}
+.modal-header{
+    border-color:#ED8074;
+}
+.modal-footer{
+    border-color:#ED8074;
+}
+
+.modal-button{
+    border: none;
+    color:#ED8074;
+    
+}
+.modal-button:hover{
+    color:#00233A;
+    background-color: #ED8074;
+}
+.submit-button{
+    border-color:#ED8074;
+    color: #00233A;
+    background-color: #ED8074;
+}
+
+.submit-button:hover{
+    border-color:#ED8074;
+    color:#ED8074;
+    background-color: #00233A;
+}
 /* Banner */
 .banner{
     background-color: #1D7A8C;
     height: 4.5rem;
     width: 100%;
     top: 0;
+    position:fixed;
 }
 
 .banner_home_img{
@@ -43,11 +77,9 @@ body{
     color: #ED8074;
 }
 
-/* LogIn Modal */
-.modal-content{
-    background-color: #00233A;
-    color: #ED8074;
-}
+
+
+
 
 
 /* Background */
