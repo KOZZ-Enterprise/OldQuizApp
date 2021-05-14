@@ -1,5 +1,6 @@
 /* Body */
-body { font-family: "Open Sans", sans-serif !important;}
+body { font-family: "Open Sans", sans-serif !important;
+background-color:#00a79d;}
 
 /* Background Colors */
 .bg-primary{ background-color: #a49dc2 !important;}

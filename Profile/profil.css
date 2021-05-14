@@ -83,7 +83,7 @@ h1{
 
 
 
-.dropbtn {
+/* .dropbtn {
     background-color: #1D7A8C;
     color: #1D7A8C;
     padding: 16px;
@@ -101,7 +101,7 @@ h1{
   
   .dropbtn:hover, .dropbtn:focus {
     background-color: #ED8074;
-  }
+  } */
   
   .dropdown {
     position: relative;
@@ -112,6 +112,7 @@ h1{
   
   .dropdown-content {
     display: none;
+    margin-top: 4.5rem;
     position: absolute;
     background-color: #1D7A8C;
     min-width: 160px;
