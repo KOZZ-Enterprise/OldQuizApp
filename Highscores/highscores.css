@@ -1,22 +1,22 @@
 body {
     background-color: #00233A ;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
+    
+    text-align: center;
   
 }
 h2{
-    color:  #9abdd4 ;
+    color:  #ED8074;
     text-align: center;
 }
 P{
-    color:  #9abdd4 ;
+    color:  #ED8074 ;
     text-align: center;
 }
 
 .profile_pic_img{
-    height: 10rem;
-    margin-left: 42rem;
-    margin-right: 42rem;
+    height: 15rem;
+    margin-top: 5rem;
 }
 
 
@@ -27,13 +27,13 @@ P{
     border-radius: 5px 5px 0px 0px;
 
     background-color: #1D7A8C;
-    margin-left: 35rem;
-    margin-right: 35rem;
+    margin: 5rem 35rem 0 35rem;
   }
   
   /* Style the buttons that are used to open the tab content */
   .tab button {
     background-color: inherit;
+    color: #9abdd4;
     float: left;
     border: none;
     outline: none;
