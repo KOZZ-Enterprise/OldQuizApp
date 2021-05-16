@@ -6,17 +6,29 @@ body{
 .button{
     transition-duration: 0.4s;
     border-style: solid;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
 }
 
 /* LogIn Modal */
 .modal-content{
     background-color: #00233A;
     color: #ED8074;
+    font-size:larger;
 }
 .modal-header{
     border-color:#ED8074;
 }
+.modal-close{
+  opacity: 1;
+  color:#ED8074;
+  text-shadow: none;
+  font-size: 2.5rem;
+  line-height: 0.5;
+}
+.modal-close:hover{
+  color:#dd8c83;
+}
+
 .modal-footer{
     border-color:#ED8074;
 }
