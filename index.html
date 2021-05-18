@@ -35,7 +35,6 @@
           <div class="modal-body">
             <label for="inputLogInEmailOrUsername">Email or Username</label>
             <input type="text" id="inputLogInEmailOrUsername" class="form-control" aria-describedby="logInEmailOrUserNameHelpBlock" >
-            
             <label for="inputLogInPassword">Password</label>
             <input type="password" id="inputLogInPassword" class="form-control" aria-describedby="logInPasswordHelpBlock">
             <input type="submit" id="logInSubmit" class="submit-button btn btn-dark btn-block" style="margin-top:4%" value="Log In" disabled="disabled" />
@@ -45,7 +44,8 @@
             <!-- <button type="submit" id="loginSubmit" class=" btn btn-light btn-block" disabled="disabled" >Log In</button> -->
           </div>
         </div>
-      </div>
+      </div>cmd
+      
     </div>
 
     <!-- Sign Up Modal -->
@@ -78,27 +78,25 @@
             <label for="inputConfirmPassword">Confirm Password</label>
             <input type="password" id="inputConfirmPassword" class="form-control" aria-describedby="confirmPasswordHelpBlock">
             <input type="submit" id="signUpSubmit" class="submit-button btn btn-dark btn-block" style="margin-top:4%" value="Sign Up" disabled="disabled" />
-            
           </div>
-            <!-- <button type="submit" id="loginSubmit" class=" btn btn-light btn-block" disabled="disabled" >Log In</button> -->
-          </div>
+          <!-- <button type="submit" id="loginSubmit" class=" btn btn-light btn-block" disabled="disabled" >Log In</button> -->
         </div>
       </div>
     </div>
+    <!--Tog bort en stängande div-tagg på denna rad, hittade inte den tillhörande öppnande taggen så jag misstänker att den var överflödig-->
 
 
     <!-- Banner -->
-    <section>
-      <div class="banner">
-        <a href="index.html">
-          <img class= "banner_home_img" src="images/KozzQuiz_logo_header.png" alt="home_logo">
-        </a>
-        <!-- Button Trigger Modal -->
-        <button type="button" class="button banner_login align-items-center" data-toggle="modal" data-target="#logInModal"><i class="account-icon fas fa-user-circle fa-2x"></i><span >Log In</span></button>
-
-        
-      </div>
+  <section>
+    <div class="banner">
+      <a href="index.html">
+        <img class= "banner_home_img" src="images/KozzQuiz_logo_header.png" alt="home_logo">
+      </a>
+      <!-- Button Trigger Modal -->
+      <button type="button" class="button banner_login align-items-center" data-toggle="modal" data-target="#logInModal"><i class="account-icon fas fa-user-circle fa-2x"></i><span >Log In</span></button>
+    </div>
   </section>
+
 
   <!-- Background-FrontMenu -->
   <section>
@@ -109,21 +107,20 @@
         <button  class="button button_play" type="button">Play</button>
       </a>
       <br>
-      <button class="button button_highscore">
-        Highscore
-      </button>
+      <a href="#">
+        <button class="button button_highscore">Highscore</button>
+      </a>
     </div>
   </section>
 
 
-    <div>
-      <h1 class="how-to">How to play</h1>
-    </div>
-
+  <div>
+    <h1 class="how-to">How to play</h1>
+  </div>
 
 
     <!--   SLIDESHOW, CAROUSEL   -->
-
+  <section>
     <div class="gallery">
       <div class="gallery-container">
         <img class="gallery-item gallery-item-1" src="images/test1.png" data-index="1">
@@ -134,15 +131,15 @@
       </div>
       <div class="gallery-controls"></div>
     </div>
+  </section>
 
 
-
-
-    <script src="JavaScript/index.js"></script>
-
+  <script src="JavaScript/index.js"></script>
 
     
   </body>
+
+
   <script>
   $(document).ready(function () {
     $('#inputLogInEmailOrUsername').on('input change', function () {

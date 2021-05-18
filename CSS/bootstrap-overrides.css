@@ -1,6 +1,7 @@
 /* Body */
 body { font-family: "Open Sans", sans-serif !important;
-background-color:#00a79d;}
+background-color: #00233A;}
+/*background-color: #00a79d;}*/ /*ORIGINALFÄRGEN LJUSBLÅ*/  
 
 /* Background Colors */
 .bg-primary{ background-color: #a49dc2 !important;}
@@ -13,7 +14,8 @@ background-color:#00a79d;}
 .bg-dark{ background-color: #00233A !important;}
 .bg-white{ background-color: #ffffff !important;}
 .bg-transparent{ background-color: transparent !important;}
-.bg-blue{ background-color: #00a79d !important;}
+.bg-blue{ background-color: #00233A !important;}
+/*.bg-blue{ background-color: #00a79d !important;}*/ /*ORIGINALFÄRGEN LJUSBLÅ*/  
 .bg-dark-blue{ background-color: #00233A !important;}
 .bg-dark-pink{ background-color: #ED8074 !important;}
 .bg-dark-green{ background-color: #1D7A8C !important;}
@@ -21,7 +23,6 @@ background-color:#00a79d;}
 
 
 /* Text Colors */
-
 .text-primary{ color: #a49dc2 !important;}
 .text-secondary { color: #6c757d !important;}
 .text-success{ color: #b5d56a !important;}
@@ -32,11 +33,9 @@ background-color:#00a79d;}
 .text-dark{ color: #342a40 !important;}
 .text-white{ color: #ffffff !important;}
 .text-blue{color: #1f1347 !important;}
-
 .text-black{color: #05030a !important;}
 
 /* Button Colors */
-
 .btn-primary{ background-color: #a49dc2 !important;}
 .btn-secondary { background-color: #6c757d !important;}
 .btn-success{ background-color: #b5d56a !important;}
@@ -55,7 +54,6 @@ background-color:#00a79d;}
 
 
 /* Border Colors */
-
 .border-primary{ border-color: #a49dc2 !important;}
 .border-secondary {border-color: #6c757d !important;}
 .border-success{ border-color: #b5d56a !important;}
@@ -68,5 +66,4 @@ background-color:#00a79d;}
 .border-cozy{ border-color: #ea77ad!important;} /*Not a Bootstrap selector*/
 
 /* Shadows*/
-
 .shadow {box-shadow: 0.15rem 0.15rem 0 rgba(0, 0, 0, 0.1) !important}

@@ -29,3 +29,15 @@
     font-weight: 500;
     line-height: 1.2;
 }
+
+.question {
+    color: white;
+}
+
+.answer-button {
+    margin-top: 20px;
+}
+
+.question-image {
+    margin-top: 50px;
+}
